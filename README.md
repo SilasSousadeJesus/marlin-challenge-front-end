@@ -2,9 +2,8 @@
   <h3> Links Úteis</h3>
  
    <ul>
-    <li> <a href="https://www.w3schools.com">Repositório do back-end</a></li>
-    <li> <a href="https://www.w3schools.com">Assista um video de uso da aplicação</a> </li>
-    <li> <a href="https://www.w3schools.com">Clique e utilize o Deploy</a></li>
+    <li> <a href="https://github.com/SilasSousadeJesus/marlin-challenge-back-end">Repositório do back-end</a></li>
+    <li> <a href="https://marlin-challenge-front-end.vercel.app/home">Clique e utilize o Deploy</a></li>
   </ul>
    <br>
   <h3> Requisitos do Negócio</h3>
