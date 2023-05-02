@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="container--header">
+    <h1>Agradecemos pela leitura deste post</h1>
+    <p>Volte sempre que quiser se manter informado e atualizado</p>
+  </div>
+  <div class="container--body">
+    <div class="body--center body__invert">
+      <div class="body--center--cards">
+        <app-card-details [post]="post" class="posts"></app-card-details>
+      </div>
+    </div>
+
+    <div class="body--sideBar body__invert">
+      <div class="sideBar">
+        <span class="sideBar--categorie">Categorias</span>
+
+        <ul>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <div class="row-hidden">_________________________________</div>
+        </ul>
+        <div class="sideBar-btn">
+          <app-button
+            type=""
+            name="Home"
+            (click)="navigateToHome()"
+          ></app-button>
+        </div>
+        <app-input-search
+          class="input-search"
+          [placeholder]="'Pesquisar por...'"
+          [title]="'Procurando alguma notícia?'"
+        ></app-input-search>
+      </div>
+    </div>
+  </div>
+</div>

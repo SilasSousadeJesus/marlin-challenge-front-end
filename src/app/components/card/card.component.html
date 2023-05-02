@@ -1,0 +1,35 @@
+<div class="containerCard">
+  <div class="imgCard">
+    <img src="../../../assets/covid19.jpg" alt="" />
+  </div>
+  <div class="bodyCard">
+    <div class="contentCard">
+      <div class="cardTitle">
+        <h3>{{ post.title }}</h3>
+      </div>
+
+      <div class="bodyText">
+        <p>{{ post.body }}</p>
+      </div>
+
+      <div *ngIf="link">
+        <a routerLink="/details/{{ post.id }}">Ler mais</a>
+      </div>
+
+      <div *ngIf="!link">
+        <a routerLink="/home">Página Principal</a>
+      </div>
+
+      <div class="wrap-btnEdit" *ngIf="post.userId === 2">
+        <a routerLink="/edit/{{ post.id }}">
+          <fa-icon [icon]="edit" class="fa-item-action"></fa-icon
+        ></a>
+        <fa-icon
+          [icon]="del"
+          class="fa-item-action"
+          (click)="deletePost(post.id)"
+        ></fa-icon>
+      </div>
+    </div>
+  </div>
+</div>

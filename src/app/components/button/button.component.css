@@ -1,0 +1,47 @@
+.btn-generic{
+  outline: none;
+  background: none;
+  padding: 10px 20px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: #2A4E8B;
+  border: 1px solid #2A4E8B;
+  color: #fff;
+}
+
+.btn-generic:hover{
+  background-color: #305ca8;
+  border: 1px solid #305ca8;
+  color: #fff;
+}
+
+
+
+@media screen and (max-width: 30.063em) {
+
+}
+
+@media screen and (min-width: 30.063em) and (max-width: 40.625em) {
+}
+
+@media screen and (min-width: 40.625em) and (max-width: 48em) {
+
+}
+
+@media screen and (min-width: 48.063em) and (max-width: 79.938em) {
+  .btn-generic{
+    width: 95%;
+  }
+}
+
+
+@media screen and (min-width: 80em) {
+  .btn-generic{
+    width: 88%;
+    margin: 5px;
+  }
+}
+
+
+

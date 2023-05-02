@@ -1,0 +1,25 @@
+<div class="containerCard">
+  <div class="imgCard">
+    <img src="../../../assets/covid19.jpg" alt="" />
+  </div>
+  <div class="bodyCard">
+    <div class="contentCard">
+      <div class="cardTitle">
+        <h3>{{ post.title }}</h3>
+      </div>
+
+      <div class="bodyText">
+        <p>{{ post.body }}</p>
+      </div>
+
+      <div *ngIf="link">
+        <a routerLink="/details/{{ post.id }}">Ler mais</a>
+      </div>
+
+      <div *ngIf="!link" class="contentCard--link">
+        <a routerLink="/home">Página Principal</a>
+      </div>
+
+    </div>
+  </div>
+</div>

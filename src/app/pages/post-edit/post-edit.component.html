@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="container--header">
+    <h1>Compartilhe com um mundo o que você pensa</h1>
+    <p>Escreva um post</p>
+  </div>
+  <div class="container--body">
+    <div class="body--center body__invert">
+      <div class="body--center--cards">
+        <form
+          action=""
+          class="createForm"
+          (ngSubmit)="submit()"
+          [formGroup]="formPost"
+          #formDir="ngForm"
+        >
+          <h4 class="form-title">Edição de post</h4>
+
+          <input type="text" name="title" formControlName="title" required class="form-create-input"  placeholder="  Dê um titulo"/>
+          <div
+            *ngIf="title.invalid && formDir.submitted"
+            class="validation-error"
+          >
+            <p *ngIf="title.errors?.['required']">Título obrigatório.</p>
+          </div>
+
+          <textarea  name="body" formControlName="body" required class="form-create-textarea" placeholder="  Diga o que esta pensando..." ></textarea>
+
+          <div
+            *ngIf="body.invalid && formDir.submitted"
+            class="validation-error"
+          >
+            <p *ngIf="body.errors?.['required']">Corpo do texto obrigatório.</p>
+          </div>
+
+          <button type="submit" name="Criar" class="form-create-btn">Editar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="body--sideBar body__invert">
+      <div class="sideBar">
+        <span class="sideBar--categorie">Categorias</span>
+
+        <ul>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <li>Lorem ipsum dolor</li>
+          <div class="row-hidden">_________________________________</div>
+        </ul>
+        <div class="sideBar-btn">
+          <app-button
+            type=""
+            name="Home"
+            (click)="navigateToHome()"
+          ></app-button>
+        </div>
+        <app-input-search
+          class="input-search"
+          [placeholder]="'Pesquisar por...'"
+          [title]="'Procurando alguma notícia?'"
+        ></app-input-search>
+      </div>
+    </div>
+  </div>
+</div>
